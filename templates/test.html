@@ -1,0 +1,20 @@
+{% extends 'layouts/layout.html'%}
+{%block body%}
+
+<style>
+    .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .div1 { grid-area: 1 / 1 / 6 / 2; }
+</style>
+
+<div class="parent">
+    <div class="div1"> </div>
+</div>
+
+
+{%endblock%}
